@@ -10,7 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: 01-hello-world-rest-api
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
